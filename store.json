@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "skills": [
+    {"id": "hello", "name": "团队欢迎助手", "description": "演示从 Git 发布、安装和更新 skill。", "version": "1.0.0", "path": "skills/hello", "published": true, "tags": ["demo", "onboarding"]},
+    {"id": "draft", "name": "尚未发布的草稿", "description": "此条目不会出现在公开目录中。", "version": "0.1.0", "path": "skills/draft", "published": false, "tags": ["draft"]}
+  ],
+  "mcps": [
+    {"id": "fetch", "name": "Fetch MCP", "description": "通过本机 uvx 启动的网页抓取 MCP 示例；安装不会启动进程。", "version": "1.0.0", "published": true, "tags": ["web", "demo"], "mcp": {"transport": "stdio", "command": "uvx", "args": ["mcp-server-fetch"], "env": {}}}
+  ],
+  "knowledge": [
+    {"id": "guide", "name": "团队上手指南", "description": "商店发布、同步及客户端使用说明。", "version": "1.0.0", "path": "knowledge/guide.md", "published": true, "tags": ["guide", "onboarding"]}
+  ]
+}
