@@ -3,7 +3,7 @@
   "skills": [
     {"id": "hello", "name": "团队欢迎助手", "description": "演示从 Git 发布、安装和更新 skill。", "version": "1.0.0", "path": "skills/hello", "published": true, "tags": ["demo", "onboarding"]},
     {"id": "draft", "name": "尚未发布的草稿", "description": "此条目不会出现在公开目录中。", "version": "0.1.0", "path": "skills/draft", "published": false, "tags": ["draft"]},
-    {"id": "git-release", "name": "Git 发布助手", "description": "引导小服务仓库完成带 tag 的发布、变更记录与回滚备注。", "version": "1.0.0", "path": "skills/git-release", "published": true, "tags": ["release", "git"]},
+    {"id": "git-release", "name": "Git 发布助手", "description": "引导小服务仓库完成带 tag 的发布、变更记录与回滚备注。", "version": "1.1.0", "path": "skills/git-release", "published": true, "tags": ["release", "git"]},
     {"id": "weekly-report", "name": "周报助手", "description": "把工作项整理为简明中文周报。", "version": "1.0.0", "path": "skills/weekly-report", "published": true, "tags": ["writing", "report"]}
   ],
   "mcps": [
