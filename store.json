@@ -2,12 +2,16 @@
   "version": 1,
   "skills": [
     {"id": "hello", "name": "团队欢迎助手", "description": "演示从 Git 发布、安装和更新 skill。", "version": "1.0.0", "path": "skills/hello", "published": true, "tags": ["demo", "onboarding"]},
-    {"id": "draft", "name": "尚未发布的草稿", "description": "此条目不会出现在公开目录中。", "version": "0.1.0", "path": "skills/draft", "published": false, "tags": ["draft"]}
+    {"id": "draft", "name": "尚未发布的草稿", "description": "此条目不会出现在公开目录中。", "version": "0.1.0", "path": "skills/draft", "published": false, "tags": ["draft"]},
+    {"id": "git-release", "name": "Git 发布助手", "description": "引导小服务仓库完成带 tag 的发布、变更记录与回滚备注。", "version": "1.0.0", "path": "skills/git-release", "published": true, "tags": ["release", "git"]},
+    {"id": "weekly-report", "name": "周报助手", "description": "把工作项整理为简明中文周报。", "version": "1.0.0", "path": "skills/weekly-report", "published": true, "tags": ["writing", "report"]}
   ],
   "mcps": [
-    {"id": "fetch", "name": "Fetch MCP", "description": "通过本机 uvx 启动的网页抓取 MCP 示例；安装不会启动进程。", "version": "1.0.0", "published": true, "tags": ["web", "demo"], "mcp": {"transport": "stdio", "command": "uvx", "args": ["mcp-server-fetch"], "env": {}}}
+    {"id": "fetch", "name": "Fetch MCP", "description": "通过本机 uvx 启动的网页抓取 MCP 示例；安装不会启动进程。", "version": "1.0.0", "published": true, "tags": ["web", "demo"], "mcp": {"transport": "stdio", "command": "uvx", "args": ["mcp-server-fetch"], "env": {}}},
+    {"id": "team-search", "name": "内网检索 MCP", "description": "Streamable HTTP 配置示例，指向内网检索服务；仅分发配置不在服务端运行。", "version": "1.0.0", "published": true, "tags": ["search", "http"], "mcp": {"transport": "streamable-http", "url": "http://search.internal:9000/mcp", "headers": {"Authorization": "Bearer ${SEARCH_TOKEN}"}}}
   ],
   "knowledge": [
-    {"id": "guide", "name": "团队上手指南", "description": "商店发布、同步及客户端使用说明。", "version": "1.0.0", "path": "knowledge/guide.md", "published": true, "tags": ["guide", "onboarding"]}
+    {"id": "guide", "name": "团队上手指南", "description": "商店发布、同步及客户端使用说明。", "version": "1.0.0", "path": "knowledge/guide.md", "published": true, "tags": ["guide", "onboarding"]},
+    {"id": "release-checklist", "name": "服务发布检查单", "description": "内网服务发布前中后的核对清单。", "version": "1.0.0", "path": "knowledge/release-checklist.md", "published": true, "tags": ["release", "ops"]}
   ]
 }
